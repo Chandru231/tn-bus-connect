@@ -50,7 +50,7 @@ const Header = ({ onNavigate, currentPage }) => {
               <button 
                 key={item.id} 
                 onClick={() => onNavigate(item.id)}
-                className={`text-sm font-medium transition-colors hover:text-accent-500 ${
+                className={`text-sm font-medium transition-colors hover:text-accent-500 cursor-pointer ${
                   currentPage === item.id 
                     ? 'text-primary-600 font-bold' 
                     : isScrolled || currentPage !== 'home' ? 'text-slate-600' : 'text-white/90 hover:text-white'
@@ -65,7 +65,7 @@ const Header = ({ onNavigate, currentPage }) => {
           <div className="hidden md:flex items-center space-x-4">
              <button 
                 onClick={() => onNavigate('home')}
-                className={`text-sm font-bold rounded-full px-6 py-2.5 transition-all shadow-sm hover:shadow-md ${isScrolled || currentPage !== 'home' ? 'bg-slate-900 text-white hover:bg-slate-800' : 'bg-white text-slate-900 hover:bg-slate-100'}`}
+                className={`text-sm font-bold rounded-full px-6 py-2.5 transition-all shadow-sm hover:shadow-md cursor-pointer ${isScrolled || currentPage !== 'home' ? 'bg-slate-900 text-white hover:bg-slate-800' : 'bg-white text-slate-900 hover:bg-slate-100'}`}
              >
                Check Timings
              </button>
@@ -75,7 +75,7 @@ const Header = ({ onNavigate, currentPage }) => {
           <div className="md:hidden">
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={`p-2 rounded-lg ${isScrolled || currentPage !== 'home' ? 'text-slate-800' : 'text-white'}`}
+              className={`p-2 rounded-lg cursor-pointer ${isScrolled || currentPage !== 'home' ? 'text-slate-800' : 'text-white'}`}
             >
               {mobileMenuOpen ? <X /> : <Menu />}
             </button>
@@ -93,7 +93,7 @@ const Header = ({ onNavigate, currentPage }) => {
                   onNavigate(item.id);
                   setMobileMenuOpen(false);
                 }}
-                className={`text-left font-medium py-2 border-b border-slate-50 ${currentPage === item.id ? 'text-primary-600' : 'text-slate-600'}`}
+                className={`text-left font-medium py-2 border-b border-slate-50 cursor-pointer ${currentPage === item.id ? 'text-primary-600' : 'text-slate-600'}`}
               >
                 {item.label}
               </button>

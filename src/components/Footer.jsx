@@ -34,11 +34,11 @@ const Footer = ({ onNavigate }) => {
               <MapPin className="h-4 w-4 text-primary-500" /> Top Routes
             </h4>
             <ul className="space-y-3 text-sm">
-              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left">Chennai to Madurai</button></li>
-              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left">Coimbatore to Chennai</button></li>
-              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left">Trichy to Salem</button></li>
-              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left">Madurai to Kanyakumari</button></li>
-              <li><button onClick={(e) => handleNav(e, 'routes')} className="hover:text-primary-400 transition-colors text-left font-semibold text-primary-500 mt-2">View All Routes →</button></li>
+              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left cursor-pointer">Chennai to Madurai</button></li>
+              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left cursor-pointer">Coimbatore to Chennai</button></li>
+              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left cursor-pointer">Trichy to Salem</button></li>
+              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left cursor-pointer">Madurai to Kanyakumari</button></li>
+              <li><button onClick={(e) => handleNav(e, 'routes')} className="hover:text-primary-400 transition-colors text-left font-semibold text-primary-500 mt-2 cursor-pointer">View All Routes →</button></li>
             </ul>
           </div>
 
@@ -48,11 +48,11 @@ const Footer = ({ onNavigate }) => {
               <Bus className="h-4 w-4 text-primary-500" /> Operators
             </h4>
             <ul className="space-y-3 text-sm">
-              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left">SETC Ultra Deluxe</button></li>
-              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left">TNSTC AC Services</button></li>
-              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left">Parveen Travels</button></li>
-              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left">KPN Travels</button></li>
-              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left">YBM Travels</button></li>
+              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left cursor-pointer">SETC Ultra Deluxe</button></li>
+              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left cursor-pointer">TNSTC AC Services</button></li>
+              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left cursor-pointer">Parveen Travels</button></li>
+              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left cursor-pointer">KPN Travels</button></li>
+              <li><button onClick={(e) => handleNav(e, 'timings')} className="hover:text-primary-400 transition-colors text-left cursor-pointer">YBM Travels</button></li>
             </ul>
           </div>
 
@@ -73,7 +73,7 @@ const Footer = ({ onNavigate }) => {
               <li className="pt-2">
                  <button 
                     onClick={(e) => handleNav(e, 'helpline')}
-                    className="w-full py-3 px-4 bg-slate-800 hover:bg-primary-600 text-white rounded-xl transition-all font-semibold shadow-sm text-center"
+                    className="w-full py-3 px-4 bg-slate-800 hover:bg-primary-600 text-white rounded-xl transition-all font-semibold shadow-sm text-center cursor-pointer"
                  >
                     Visit Support Center
                  </button>
