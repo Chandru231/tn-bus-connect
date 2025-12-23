@@ -61,3 +61,46 @@ h1, h2, h3, h4, h5, h6 {
 .animation-delay-100 { animation-delay: 100ms; }
 .animation-delay-200 { animation-delay: 200ms; }
 .animation-delay-300 { animation-delay: 300ms; }
+
+/* Mobile centering for Header and Footer */
+@media (max-width: 767px) {
+  /* Center mobile nav dropdown items */
+  header .md\\:hidden.absolute {
+    text-align: center;
+  }
+  
+  header .md\\:hidden.absolute button {
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Center footer content on mobile */
+  footer > div > div {
+    text-align: center;
+  }
+  
+  footer > div > div > div {
+    align-items: center;
+  }
+  
+  /* Center social icons */
+  footer .flex.space-x-4 {
+    justify-content: center;
+  }
+  
+  /* Center footer list items */
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer ul button {
+    text-align: center;
+  }
+  
+  /* Center footer headings */
+  footer h3, footer h4 {
+    justify-content: center;
+  }
+}

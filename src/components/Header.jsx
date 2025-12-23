@@ -85,7 +85,7 @@ const Header = ({ onNavigate, currentPage }) => {
 
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-t border-slate-100 shadow-xl p-4 flex flex-col space-y-4 animate-fade-in-up">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-t border-slate-100 shadow-xl p-4 flex flex-col items-center space-y-4 animate-fade-in-up">
            {navItems.map((item) => (
               <button 
                 key={item.id} 
@@ -93,7 +93,7 @@ const Header = ({ onNavigate, currentPage }) => {
                   onNavigate(item.id);
                   setMobileMenuOpen(false);
                 }}
-                className={`text-left font-medium py-2 border-b border-slate-50 cursor-pointer ${currentPage === item.id ? 'text-primary-600' : 'text-slate-600'}`}
+                className={`text-center font-medium py-2 border-b border-slate-50 cursor-pointer w-full ${currentPage === item.id ? 'text-primary-600' : 'text-slate-600'}`}
               >
                 {item.label}
               </button>
